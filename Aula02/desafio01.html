@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio da Aula01 - JavaScript</title>
+    <meta name="description" content="Conteúdo das aulas de JS">
+    <meta name="keywords" content="sites,web, frontend">
+    <meta name="author" content="Hebertt Rafael, heberttrafael4528@gmail.com">
+</head>
+
+<body>
+    <h1><mark>Manipulando Elementos (tags)</mark> do HTML atraves do JS</h1>
+    <hr>
+    <div>
+        <p>Estamos aprendendo JavaScript</p>
+        <hr>
+        <p>Aprender é muito legal!</p>
+        <p>E para ajudar o aprendizado, é PRECISO praticar e exercitar!</p>
+    </div>
+    <script>
+        const tags_p = document.getElementsByTagName("p");
+        console.log("Minhas tags <p> ",tags_p);
+
+        // Estilização Global Rihanna-Level (Vogue Aesthetic)
+        document.body.style.backgroundColor = "#0a0a0a"; // Preto profundo
+        document.body.style.color = "#f5f5f5";
+        document.body.style.fontFamily = "'Playfair Display', serif";
+        document.querySelector("h1").style.textAlign = "center";
+        document.querySelector("h1").style.letterSpacing = "10px";
+        document.querySelector("h1").style.textTransform = "uppercase";
+        document.querySelector("h1").style.padding = "50px 0";
+
+        let tag_p_1 = tags_p[0];
+        tag_p_1.style.background = "linear-gradient(90deg, #b76e79, #2c2c2c)"; // Rose Gold para Grafite
+        tag_p_1.style.color = "white";
+        tag_p_1.style.fontSize = "26px";
+        tag_p_1.style.fontWeight = "300";
+        tag_p_1.style.textAlign = "center";
+        tag_p_1.style.margin = "30px auto";
+        tag_p_1.style.padding = "40px";
+        tag_p_1.style.width = "75%";
+        tag_p_1.style.boxShadow = "20px 20px 0px #d4af37"; // Sombra sólida dourada (high fashion)
+
+        let tag_p_2 = tags_p[1];
+        tag_p_2.style.color = "#d4af37"; // Ouro metálico
+        tag_p_2.style.fontSize = "22px";
+        tag_p_2.style.fontStyle = "italic";
+        tag_p_2.style.textAlign = "center";
+        tag_p_2.style.margin = "40px auto";
+        tag_p_2.style.borderTop = "1px solid #d4af37";
+        tag_p_2.style.width = "50%";
+        tag_p_2.style.paddingTop = "20px";
+
+        let tag_p_3 = tags_p[2];
+        tag_p_3.style.color = "#fff";
+        tag_p_3.style.fontSize = "16px";
+        tag_p_3.style.textAlign = "center";
+        tag_p_3.style.letterSpacing = "6px";
+        tag_p_3.style.textTransform = "uppercase";
+        tag_p_3.style.opacity = "0.6";
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01 - JavaScript</title>
+    <meta name="description" content="Conteúdo das aulas de JS">
+    <meta name="keywords" content="sites,web, frontend">
+    <meta name="author" content="Hebertt Rafael, heberttrafael4528@gmail.com">
+</head>
+
+<body>
+    <h1><mark>Manipulando Elementos (tags)</mark> do HTML atraves do JS</h1>
+    <hr>
+    <div>
+        <p>Estamos aprendendo JavaScript</p>
+        <hr>
+        <p>Aprender é muito legal!</p>
+        <p>E para ajudar o aprendizado, é PRECISO praticar e exercitar!</p>
+    </div>
+    <script>
+        const tags_p = document.getElementsByTagName("p");
+        console.log("Minhas tags <p> ",tags_p);
+        let tag_p_1 = tags_p[0];
+
+        tag_p_1.style.backgroundColor = "cyan";
+        tag_p_1.style.color = "black";
+        tag_p_1.style.fontSize = "20px";
+        tag_p_1.style.fontWeight = "bold";
+        tag_p_1.style.textAlign = "center";
+        tag_p_1.style.margin = "10px";
+        tag_p_1.style.padding = "10px";
+
+        let tag_p_2 = tags_p[1];
+        tag_p_2.style.backgroundColor = "yellow";
+        tag_p_2.style.color = "black";
+        tag_p_2.style.fontSize = "20px";
+        tag_p_2.style.fontWeight = "bold";
+        tag_p_2.style.textAlign = "center";
+        tag_p_2.style.margin = "10px";
+        tag_p_2.style.padding = "10px";
+
+        let tag_p_3 = tags_p[2];
+        tag_p_3.style.backgroundColor = "lightgray";
+        tag_p_3.style.color = "black";
+        tag_p_3.style.fontSize = "20px";
+        tag_p_3.style.fontWeight = "bold";
+        tag_p_3.style.textAlign = "center";
+        tag_p_3.style.margin = "10px";
+        tag_p_3.style.padding = "10px";
+    </script>
+</body>
+
+</html>
